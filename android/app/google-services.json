@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "619625340608",
+    "firebase_url": "https://helo-car-default-rtdb.firebaseio.com",
+    "project_id": "helo-car",
+    "storage_bucket": "helo-car.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619625340608:android:b965925767ea0f25c09725",
+        "android_client_info": {
+          "package_name": "com.helocardriver.helocar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619625340608-ka7amh38psqqfh2bgoonk56eokfrcrii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG0FvKLVC_Rr5kVPrKwts98tDednfGK64"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619625340608-ka7amh38psqqfh2bgoonk56eokfrcrii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
