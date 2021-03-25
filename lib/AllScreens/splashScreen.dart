@@ -2,19 +2,26 @@ import 'package:flutter/material.dart';
 import 'package:curved_splash_screen/curved_splash_screen.dart';
 import 'package:helocar/AllScreens/loginScreen.dart';
 
-class SplashScreen extends StatelessWidget {
+class SplashScreen extends StatefulWidget {
   static const String idScreen = "splash";
+
+  @override
+  _SplashScreenState createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  String skipBtn = 'Lewat';
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: CurvedSplashScreen(
+    return Scaffold(
+
+      body: CurvedSplashScreen(
           screensLength: splashContent.length,
+          backText: 'Balik',
+          skipText: 'Lewat',
+          firstGradiantColor: Colors.greenAccent,
+          secondGradiantColor: Colors.green,
+          forwardColor: Colors.deepOrange,
           screenBuilder: (index) {
             return SplashContent(
               title: splashContent[index]["title"],

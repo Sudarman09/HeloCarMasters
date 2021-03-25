@@ -1,4 +1,5 @@
 import 'package:helocar/AllScreens/carInfoScreen.dart';
+import 'package:helocar/AllScreens/loginScreen.dart';
 import 'package:helocar/AllScreens/splashScreen.dart';
 import 'package:helocar/DataHandler/appData.dart';
 import 'package:helocar/configMaps.dart';
@@ -7,7 +8,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'AllScreens/loginScreen.dart';
 import 'AllScreens/mainScreen.dart';
 import 'AllScreens/registrationScreen.dart';
 
@@ -39,9 +39,9 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => AppData(),
       child: MaterialApp(
-        title: 'HeloCar Driver',
+        title: 'Helocar Driver',
         theme: ThemeData(
-          primarySwatch: Colors.blue,
+          primarySwatch: Colors.green,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
         initialRoute: FirebaseAuth.instance.currentUser == null
@@ -50,9 +50,9 @@ class MyApp extends StatelessWidget {
         routes: {
           SplashScreen.idScreen: (context) => SplashScreen(),
           RegistrationScreen.idScreen: (context) => RegistrationScreen(),
-          LoginScreen.idScreen: (context) => LoginScreen(),
           MainScreen.idScreen: (context) => MainScreen(),
           CarInfoScreen.idScreen: (context) => CarInfoScreen(),
+          LoginScreen.idScreen: (context) => LoginScreen(),
         },
         debugShowCheckedModeBanner: false,
       ),
